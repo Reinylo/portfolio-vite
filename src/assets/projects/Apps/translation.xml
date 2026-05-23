@@ -1,0 +1,462 @@
+<data>
+    <entry id="text_lessons">
+        <en>Lessons</en>
+        <cn>课程</cn>
+        <bm>Pelajaran</bm>
+    </entry>
+
+    <entry id="text_game">
+        <en>Game</en>
+        <cn>游戏</cn>
+        <bm>Permainan</bm>
+    </entry>
+
+    <entry id="text_credits">
+        <en>Credits</en>
+        <cn>制作人员</cn>
+        <bm>Kredit</bm>
+    </entry>
+
+    <entry id="text_colors">
+        <en>Colors</en>
+        <cn>颜色</cn>
+        <bm>Warna</bm> 
+    </entry>
+
+    <entry id="text_objects">
+        <en>Objects</en>
+        <cn>物品</cn>
+        <bm>Objek</bm>
+    </entry>
+
+    <entry id="text_manners">
+        <en>Manners</en>
+        <cn>礼貌用语</cn>
+        <bm>Adab</bm>
+    </entry>
+
+    <entry id="text_family">
+        <en>Family</en>
+        <cn>家庭</cn>
+        <bm>Keluarga</bm>
+    </entry>
+
+    <entry id="text_pronouns">
+        <en>Pronouns</en>
+        <cn>代词</cn>
+        <bm>kata ganti nama</bm>
+    </entry>
+
+    <entry id="text_feelings">
+        <en>Feelings</en>
+        <cn>感受</cn>
+        <bm>Perasaan</bm>
+    </entry>
+
+
+    <entry id="text_red">
+        <en>Red</en>
+        <cn>红色</cn>
+        <bm>Merah</bm>
+    </entry>
+
+    <entry id="text_blue">
+        <en>Blue</en>
+        <cn>蓝色</cn>
+        <bm>Biru</bm>
+    </entry>
+
+    <entry id="text_green">
+        <en>Green</en>
+        <cn>绿色</cn>
+        <bm>Hijau</bm>
+    </entry>
+
+    <entry id="text_yellow">
+        <en>Yellow</en>
+        <cn>黄色</cn>
+        <bm>Kuning</bm>
+    </entry>
+
+    <entry id="text_pink">
+        <en>Pink</en>
+        <cn>粉色</cn>
+        <bm>merah jambu</bm>
+    </entry>
+
+    <entry id="text_one_of_five">
+        <en>1 of 5</en>
+        <cn>第1个</cn>
+        <bm>1 daripada 5</bm>
+    </entry>
+
+    <entry id="text_two_of_five">
+        <en>2 of 5</en>
+        <cn>第2个</cn>
+        <bm>2 daripada  5</bm>
+    </entry>
+
+    <entry id="text_three_of_five">
+        <en>3 of 5</en>
+        <cn>第3个</cn>
+        <bm>3 daripada  5</bm>
+    </entry>
+
+    <entry id="text_four_of_five">
+        <en>4 of 5</en>
+        <cn>第4个</cn>
+        <bm>4 daripada  5</bm>
+    </entry>
+
+    <entry id="text_five_of_five">
+        <en>5 of 5</en>
+        <cn>第5个</cn>
+        <bm>5 daripada 5</bm>
+    </entry>
+
+    <entry id="text_book">
+        <en>Book</en>
+        <cn>书</cn>
+        <bm>Buku</bm>
+    </entry>
+
+    <entry id="text_ball">
+        <en>Ball</en>
+        <cn>球</cn>
+        <bm>Bola</bm>
+    </entry>
+
+    <entry id="text_cup">
+        <en>Cup</en>
+        <cn>杯子</cn>
+        <bm>Cawan</bm>
+    </entry>
+
+    <entry id="text_bag">
+        <en>Bag</en>
+        <cn>包</cn>
+        <bm>Beg</bm>
+    </entry>
+
+    <entry id="text_chair">
+        <en>Chair</en>
+        <cn>椅子</cn>
+        <bm>Kerusi</bm>
+    </entry>
+    
+    <entry id="text_thankyou">
+        <en>Thank you</en>
+        <cn>谢谢</cn>
+        <bm>Terima Kasih</bm>
+    </entry>
+
+    <entry id="text_please">
+        <en>Please</en>
+        <cn>请</cn>
+        <bm>Tolong</bm>
+    </entry>
+
+    <entry id="text_sorry">
+        <en>Sorry</en>
+        <cn>对不起</cn>
+        <bm>Maaf</bm>
+    </entry>
+
+    <entry id="text_hello">
+        <en>Hello</en>
+        <cn>你好</cn>
+        <bm>helo</bm>
+    </entry>
+
+    <entry id="text_goodbye">
+        <en>Goodbye</en>
+        <cn>再见</cn>
+        <bm>Selamat tinggal</bm>
+    </entry>
+
+    <entry id="text_father">
+        <en>Dad</en>
+        <cn>爸爸</cn>
+        <bm>Ayah</bm>
+    </entry>
+
+    <entry id="text_mother">
+        <en>Mom</en>
+        <cn>妈妈</cn>
+        <bm>Ibu</bm>
+    </entry>
+
+    <entry id="text_brother">
+        <en>Brother</en>
+        <cn>兄弟</cn>
+        <bm>Abang</bm>
+    </entry>
+
+    <entry id="text_sister">
+        <en>Sister</en>
+        <cn>姐妹</cn>
+        <bm>Kakak</bm>
+    </entry>
+
+     <entry id="text_infant">
+        <en>Baby</en>
+        <cn>宝宝</cn>
+        <bm>Bayi</bm>
+    </entry>
+
+    <entry id="text_he_she">
+        <en>He / she</en>
+        <cn>他 / 她</cn>
+        <bm>Dia</bm>
+    </entry>
+
+    <entry id="text_we">
+        <en>We</en>
+        <cn>我们</cn>
+        <bm>Kita</bm>
+    </entry>
+
+
+    <entry id="text_bubble_they">
+        <en>They</en>
+        <cn>他们</cn>
+        <bm>Mereka</bm>
+    </entry>
+
+    <entry id="text_they">
+        <en>They</en>
+        <cn>他们 / 她们 / 它们</cn>
+        <bm>Mereka</bm>
+    </entry>
+
+    <entry id="bubble_you">
+        <en>You</en>
+        <cn>你</cn>
+        <bm>kamu</bm>
+    </entry>
+
+    <entry id="text_you">
+        <en>You</en>
+        <cn>你 / 你们</cn>
+        <bm>kamu</bm>
+    </entry>
+    
+
+    <entry id="text_i_me">
+        <en>I / me</en>
+        <cn>我</cn>
+        <bm>Saya</bm>
+    </entry>
+
+    <entry id="text_happy">
+        <en>Happy</en>
+        <cn>开心</cn>
+        <bm>Gembira</bm>
+    </entry>
+
+    <entry id="text_sad">
+        <en>Sad</en>
+        <cn>难过</cn>
+        <bm>Sedih</bm>
+    </entry>
+
+    <entry id="text_angry">
+        <en>Angry</en>
+        <cn>生气</cn>
+        <bm>Marah</bm>
+    </entry>
+
+    <entry id="text_sleepy">
+        <en>Sleepy</en>
+        <cn>困倦</cn>
+        <bm>Mengantuk</bm>
+    </entry>
+
+    <entry id="text_scared">
+        <en>Scared</en>
+        <cn>害怕</cn>
+        <bm>Takut</bm>
+    </entry>
+
+    <entry id="text_part1">
+        <en>Game 1</en>
+        <cn>游戏一</cn>
+        <bm>Permainan 1</bm>
+    </entry>
+
+    <entry id="text_q1">
+        <en>How does Mochi feel ?</en>
+        <cn>Mochi 的心情怎么样？</cn> 
+        <bm>Bagaimana perasaan Mochi?</bm>
+    </entry>
+
+    <entry id="text_q2">
+        <en>Maybe she lost something..</en>
+        <cn>也许她丢了什么东西...</cn>
+        <bm>Mungkin dia hilang sesuatu...</bm> 
+    </entry>
+
+    <entry id="text_q3">
+        <en>What did mochi lose?</en>
+        <cn>Mochi 丢了什么？</cn>
+        <bm>Apakah yang Mochi hilang?</bm> 
+    </entry>
+
+    <entry id="text_q4">
+        <en>what color is the bag?</en>
+        <cn>包是什么颜色的？</cn>
+        <bm>beg itu warna apa?</bm> 
+    </entry>
+
+    <entry id="text_q5">
+        <en>let's help Mochi find her bag!</en>
+        <cn>让我们帮助 Mochi 找到她的包吧！</cn>
+        <bm>Mari kita bantu Mochi mencari begnya!</bm> 
+    </entry>
+
+    <entry id="text_LFTB">
+        <en>Let's look for the bag!</en> 
+        <cn>让我们一起找包吧！</cn>
+        <bm>Jom cari beg!</bm>
+    </entry>
+
+    <entry id="text_q6">
+        <en>Select the bag</en>
+        <cn>点击包</cn>
+        <bm>Pilih beg</bm>
+    </entry>
+
+    <entry id="text_q7">
+        <en>You found Mochi's bag! What is Mochi saying?</en>
+        <cn>你找到了 Mochi 的包！Mochi 说了什么？</cn>
+        <bm>Kamu jumpa bag Mochi! Apa yang dikatakan Mochi?</bm> 
+    </entry>
+
+    <entry id="text_q8">
+        <en>you're welcome Mochi!</en>
+        <cn>不客气, Mochi！</cn>
+        <bm>Sama-sama, Mochi!</bm>
+    </entry>
+
+    <entry id="text_correct">
+        <en>Correct!</en>
+        <cn>正确！</cn>
+        <bm>Betul!</bm>
+    </entry>
+
+    <entry id="text_correct_res">
+        <en>Correct:</en>
+        <cn>正确:</cn>
+        <bm>Betul:</bm>
+    </entry>
+
+    <entry id="text_wrong">
+        <en>That is not correct..</en>
+        <cn>这不是正确答案..</cn>
+        <bm>Itu bukan jawapan yang betul..</bm>
+    </entry>
+
+    <entry id="text_wrong_res">
+        <en>wrong:</en>
+        <cn>错误:</cn>
+        <bm>Salah:</bm>
+    </entry>
+
+    <entry id="text_goodJob">
+        <en>---- Good Job ! ----</en>
+        <cn>---- 做得好 ! ----</cn>
+        <bm>---- bagus! ----</bm> 
+    </entry>
+
+    <entry id="text_amazing">
+        <en>---- Amazing ! ----</en>
+        <cn>---- 太棒了 ! ----</cn>
+        <bm>---- hebat! ----</bm>
+    </entry>
+
+    <entry id="text_score">
+        <en>Score</en>
+        <cn>分数</cn>
+        <bm>Markah</bm>
+    </entry>
+    
+    <entry id="text_next">
+        <en>NEXT</en>
+        <cn>下一个</cn>
+        <bm>Seterusnya</bm>
+    </entry>
+
+    <entry id="text_play_again">
+        <en>Play Again</en>
+        <cn>再玩一次</cn>
+        <bm>Main lagi</bm>
+    </entry>
+
+    <entry id="text_leave">
+        <en>Go Back</en>
+        <cn>返回</cn>
+        <bm>Kembali</bm>
+    </entry>
+
+    <entry id="text_start_game">
+        <en>START</en>
+        <cn>开始</cn>
+        <bm>MULA</bm>
+    </entry>
+
+    <entry id="text_results">
+        <en>show results</en>
+        <cn>查看结果</cn>
+        <bm>Lihat keputusan</bm>
+    </entry>
+
+    <entry id="text_good_msg">
+        <en>Yay! now you are Mochi's friend !</en>
+        <cn>耶！现在你是 Mochi 的朋友了！</cn>
+        <bm>Yay! sekarang kamu kawan Mochi!</bm>
+    </entry>
+
+    <entry id="text_bad_msg">
+        <en>It's okey to make mistakes. It means you can learn more!</en>
+        <cn>犯错是正常的。这表示你可以学到更多！</cn>
+        <bm>Tidak apa-apa membuat kesalahan. Itu maksud kamu boleh belajar lebih lagi!</bm>
+    </entry>
+
+    <entry id="text_instructions1">
+        <en>Read the question and try to understand Mochi's signs</en>
+        <cn>阅读问题并理解 Mochi 的手势</cn>
+        <bm>Baca soalan dan lihat isyarat Mochi</bm>
+    </entry>
+
+    <entry id="text_instructions2">
+        <en>Then choose the correct answer to help Mochi !</en>
+        <cn>然后选择正确的答案来帮助 Mochi！</cn>
+        <bm>Lalu pilih jawapan yang betul untuk membantu Mochi!</bm>
+    </entry>
+
+    <entry id="text_signs_bag">
+        <en>this sign means bag</en>
+        <cn>这个手势表示“包”</cn>
+        <bm>isyarat ini bermaksud beg</bm>
+    </entry>
+
+    <entry id="text_signs_blue">
+        <en>this sign means blue</en>
+        <cn>这个手势表示“蓝色”</cn>
+        <bm>isyarat ini bermaksud biru</bm>
+    </entry>
+
+    <entry id="text_signs_sad">
+        <en>this sign means sad</en>
+        <cn>这个手势表示“难过”</cn>
+        <bm>isyarat ini bermaksud sedih</bm>
+    </entry>
+
+    <entry id="text_signs_tq">
+        <en>this sign means thank you</en>
+        <cn>这个手势表示“谢谢”</cn>
+        <bm>isyarat ini bermaksud terima kasih</bm>
+    </entry>
+
+
+</data>

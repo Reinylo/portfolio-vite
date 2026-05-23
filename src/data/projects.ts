@@ -1,0 +1,125 @@
+export type ProjectCategory = "3d-art" | "graphic-design" | "vector-illustration" | "multimedia-apps" | "web-development" | "UI Design" | "programming";
+
+export interface Project {
+    id: string;
+    title: string;
+    category: ProjectCategory;
+    thumbnail: string;
+    abstract: string;
+    description: string;
+    details: string;
+    tools: string[];
+    year: number;
+    objectives?: string[];
+    limitations?: string[];
+    swfUrl?: string;
+    documentationPdf?: string;
+    gallery?: {
+        images?: string[];
+        videos?: string[];
+        sketchfabUrl?: string;
+    };
+}
+
+export const projects: Project[] = [
+    {
+        id: "1",
+        title: "Brochure Design",
+        category: "graphic-design",
+        thumbnail: "src/assets/projects/Ps/Mock Up.png",
+        abstract: "Brochure design for Samsung Fold Phone showcasing its features and design.",
+        description: "A creative graphic design project focused on designing a brochure for the Samsung Fold Phone.",
+        details: "Designed a visually appealing brochure that highlights the unique features of the Samsung Fold Phone. The design main idea was to enable the customer to experience the foldable design through the brochure layout and visuals.",
+        tools: ["Adobe Photoshop"],
+        year: 2024,
+        documentationPdf: "src/assets/projects/pdfs/brochure Doc.pdf",
+        gallery: {
+            images: [
+                "src/assets/projects/Ps/brochure copy.jpg",
+                "src/assets/projects/Ps/brochure pg2 copy.jpg",
+            ],
+        },
+    },
+    {
+        id: "2",
+        title: "3D stylized Street Food Stall Scene",
+        category: "3d-art",
+        thumbnail: "src/assets/projects/3D/camera 1.png",
+        abstract: "A detailed 3D environment depicting a vibrant street food stall.",
+        description: "A comprehensive 3D modeling project showcasing a bustling street food scene.",
+        details: "This project focuses on creating an stylized 3D Scene, with attention to detials, lighting, and props. The scene focuses on color compostion and storytelling.",
+        tools: ["3DsMax", "Substance Painter", "Marmoset Toolbag"],
+        year: 2024,
+        documentationPdf: "src/assets/projects/pdfs/3D Doc.pdf",
+        gallery: {
+            images: [
+                "src/assets/projects/3D/camera 3.png",
+                "src/assets/projects/3D/camera 5.png",
+                "src/assets/projects/3D/camera 6.png",
+                "src/assets/projects/3D/camera 7.png",
+                "src/assets/projects/3D/camera 9.png",
+            ],
+            videos: [
+                "src/assets/projects/3D/turntable.mp4",
+                "src/assets/projects/3D/model.mp4",
+            ],
+            sketchfabUrl: "https://sketchfab.com/models/7bced1dc5cbb4dd7b7923f449a766253/embed",
+        },
+    },
+    {
+        id: "3",
+        title: "Sign Language Learning App",
+        category: "multimedia-apps",
+        thumbnail: "src/assets/projects/Apps/SignBuddy.png",
+        abstract: "A Pc-based application for learning sign language for children.",
+        description: "An interactive application designed to teach sign language to young learners.",
+        details: "This multimedia application combines engaging visuals, interactive exercises, and gamification elements to create an effective learning experience for children. The app includes video demonstrations, quizzes, and progress tracking to help users learn and practice sign language in a fun and educational way.",
+        tools: ["Adobe Animate"],
+        year: 2025,
+        swfUrl: "src/assets/projects/Apps/ICDAssignment 5.0 .swf",
+    },
+    {
+        id: "4",
+        title: "Tailora e-commerce website",
+        category: "web-development",
+        thumbnail: "src/assets/projects/webDev/tailora.png",
+        abstract: "An e-commerce website for the prototype application Tailora.",
+        description: "A responsive e-commerce platform built with modern web technologies.",
+        details: "This project involved designing and developing a full-featured e-commerce website with a focus on user experience and performance. Key features include product browsing, shopping cart functionality, and secure checkout.",
+        tools: ["HTML", "CSS", "JavaScript"],
+        year: 2025,
+    },
+    {
+        id: "5",
+        title: "Web-based hotel booking system UI Design",
+        category: "UI Design",
+        thumbnail: "src/assets/projects/UI/Homepage.png",
+        abstract: "A clean and intuitive UI design for a hotel booking web application.",
+        description: "A user-friendly interface for a hotel booking system, designed to enhance the user experience.",
+        details: "This UI design project focuses on creating a seamless and visually appealing user interface for a hotel booking system. The design emphasizes ease of navigation, clear information hierarchy, and a modern aesthetic to improve user engagement and satisfaction.",
+        tools: ["Adobe Photoshop"],
+        year: 2025,
+    },
+    {
+        id: "6",
+        title: "Accurate Stylized Map SVG Illustrations",
+        category: "vector-illustration",
+        thumbnail: "src/assets/projects/Logos/mapSVG.png",
+        abstract: "Stylized SVG map illustrations with accurate geographic details for a website.",
+        description: "A stylized SVG map illustration that combine artistic design with geographic accuracy.",
+        details: "This project involved creating detailed SVG map illustrations that are both visually appealing and geographically accurate. The maps are designed to be used on a website, providing an engaging way to display geographic information while maintaining a unique artistic style.",
+        tools: ["Adobe Illustrator"],
+        year: 2024,
+    },
+    {
+        id: "7",
+        title: "Startup Logo",
+        category: "vector-illustration",
+        thumbnail: "src/assets/projects/Logos/ESG.jpg",
+        abstract: "Modern minimalist logo design for a sustainability company.",
+        description: "A sleek, minimalist logo that represents sustainability with the ES litters",
+        details: "This logo design combines geometric forms with modern design principles to create a memorable brand identity. The design works across multiple scales and mediums.",
+        tools: ["Adobe Illustrator"],
+        year: 2024,
+    },
+];
