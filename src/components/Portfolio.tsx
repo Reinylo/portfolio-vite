@@ -35,11 +35,10 @@ export default function Portfolio({ onSelectProject }: PortfolioProps) {
                     {categories.map((category) => (
                         <button
                             key={category.id}
-                            className={`flex-none rounded-[2rem] border px-6 py-3 text-base font-small transition-all duration-300 ease-in-out ${
-                                activeCategory === category.id
+                            className={`flex-none rounded-[2rem] border px-6 py-3 text-base font-small transition-all duration-300 ease-in-out ${activeCategory === category.id
                                     ? "border-[var(--primary-purple)] bg-[var(--primary-purple)] text-white shadow-[0_4px_12px_rgba(124,58,237,0.35)]"
                                     : "border-[var(--card-border)] bg-transparent text-[var(--text)] hover:border-[var(--primary-purple)] hover:text-[var(--primary-purple)]"
-                            }`}
+                                }`}
                             onClick={() => setActiveCategory(category.id as ProjectCategory | "all")}
                         >
                             {category.label}
@@ -76,7 +75,19 @@ export default function Portfolio({ onSelectProject }: PortfolioProps) {
                                 <p className="mb-3 text-left text-[0.85rem] font-semibold uppercase text-[var(--primary-cyan)]">
                                     {t(`cat.${project.category}`)}
                                 </p>
-                                <p className="flex-1 text-left text-[0.95rem] leading-6 text-[var(--text)]">{project.abstract}</p>
+                                <p className="mb-4 flex-1 text-left text-[0.95rem] leading-6 text-[var(--text)]">{project.abstract}</p>
+                                <div className="flex flex-wrap gap-1.5">
+                                    {project.tools.slice(0, 4).map((tool) => (
+                                        <span key={tool} className="rounded-full border border-[var(--card-border)] px-2.5 py-0.5 text-[0.75rem] font-medium text-[var(--text)]/70">
+                                            {tool}
+                                        </span>
+                                    ))}
+                                    {project.tools.length > 4 && (
+                                        <span className="rounded-full border border-[var(--card-border)] px-2.5 py-0.5 text-[0.75rem] font-medium text-[var(--text)]/40">
+                                            +{project.tools.length - 4}
+                                        </span>
+                                    )}
+                                </div>
                             </div>
                         </button>
                     ))}

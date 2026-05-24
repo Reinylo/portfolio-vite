@@ -55,6 +55,7 @@ const en: Dict = {
     "project.model3d": "3D Model Viewer",
     "project.app": "Interactive App",
     "project.year": "YEAR",
+    "project.gallery": "Gallery",
 
     // Contact
     "contact.title": "Get In Touch",
@@ -179,6 +180,7 @@ const my: Dict = {
     "project.model3d": "Paparan Model 3D",
     "project.app": "Aplikasi Interaktif",
     "project.year": "TAHUN",
+    "project.gallery": "Galeri",
 
     "contact.title": "Hubungi Saya",
     "contact.subtitle": "Ada projek atau ingin bekerjasama? Saya ingin mendengar daripada anda.",
@@ -300,6 +302,7 @@ const zh: Dict = {
     "project.model3d": "3D 模型查看器",
     "project.app": "互动应用",
     "project.year": "年份",
+    "project.gallery": "图库",
 
     "contact.title": "联系我",
     "contact.subtitle": "有项目想法或想合作？我很乐意听取您的意见。",

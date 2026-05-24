@@ -13,6 +13,7 @@ export interface Project {
     objectives?: string[];
     limitations?: string[];
     swfUrl?: string;
+    websiteUrl?: string;
     documentationPdf?: string;
     gallery?: {
         images?: string[];
@@ -88,6 +89,7 @@ export const projects: Project[] = [
         details: "This project involved designing and developing a full-featured e-commerce website with a focus on user experience and performance. Key features include product browsing, shopping cart functionality, and secure checkout.",
         tools: ["HTML", "CSS", "JavaScript"],
         year: 2025,
+        websiteUrl: "https://reinylo.github.io/Tailora.com/",
     },
     {
         id: "5",
