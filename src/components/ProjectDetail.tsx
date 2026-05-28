@@ -80,6 +80,15 @@ export default function ProjectDetail({ projectId, onBack }: ProjectDetailProps)
                                     <FiGlobe size={12} className="shrink-0 text-[var(--text)]/40" />
                                     <span className="truncate text-xs text-[var(--text)]/50">{currentHero.src}</span>
                                 </div>
+                                <a
+                                    href={currentHero.src}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex shrink-0 items-center justify-center rounded-md border border-[var(--card-border)] p-1.5 text-[var(--text)]/40 transition-all duration-200 hover:border-[var(--primary-purple)]/50 hover:text-[var(--primary-purple)]"
+                                    title="Open in new tab"
+                                >
+                                    <FiMaximize2 size={12} />
+                                </a>
                             </div>
                             <div className="overflow-hidden" style={{ height: "560px" }}>
                                 <iframe

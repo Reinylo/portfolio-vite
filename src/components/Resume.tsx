@@ -23,8 +23,8 @@ type SkillCategory = "design" | "code" | "tool";
 function SkillTag({ label, category }: { label: string; category: SkillCategory }) {
     const hoverColors: Record<SkillCategory, string> = {
         design: "border-[var(--primary-cyan)] hover:bg-[var(--primary-cyan)]",
-        code:   "border-[var(--primary-purple)] hover:bg-[var(--primary-purple)]",
-        tool:   "border-[var(--primary-yellow)] hover:bg-[var(--primary-yellow)]",
+        code: "border-[var(--primary-purple)] hover:bg-[var(--primary-purple)]",
+        tool: "border-[var(--primary-yellow)] hover:bg-[var(--primary-yellow)]",
     };
     return (
         <span className={`cursor-default rounded-full border px-3.5 py-1.5 text-sm font-medium text-[var(--text-h)] transition-all duration-200 hover:text-white ${hoverColors[category]}`}>
@@ -43,8 +43,8 @@ function SkillGroup({
 }) {
     const accent: Record<SkillCategory, string> = {
         design: "text-[var(--primary-cyan)]",
-        code:   "text-[var(--primary-purple)]",
-        tool:   "text-[var(--primary-yellow)]",
+        code: "text-[var(--primary-purple)]",
+        tool: "text-[var(--primary-yellow)]",
     };
     return (
         <div className="rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)] p-7">
@@ -112,27 +112,34 @@ function LangBar({ lang, level, pct }: { lang: string; level: string; pct: numbe
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
-export default function Resume() {
+interface ResumeProps {
+    onNavigate: (view: "home" | "portfolio" | "project-detail" | "contact" | "resume") => void;
+}
+
+export default function Resume({ onNavigate }: ResumeProps) {
     const { t } = useLanguage();
     const [activeTab, setActiveTab] = useState(0);
 
     const tabs: { icon: React.ReactNode; label: string }[] = [
         { icon: <FiBriefcase size={15} />, label: t("resume.tab.experience") },
-        { icon: <FiCode     size={15} />, label: t("resume.tab.skills")     },
-        { icon: <FiBook     size={15} />, label: t("resume.tab.education")  },
-        { icon: <FiGlobe    size={15} />, label: t("resume.tab.languages")  },
+        { icon: <FiCode size={15} />, label: t("resume.tab.skills") },
+        { icon: <FiBook size={15} />, label: t("resume.tab.education") },
+        { icon: <FiGlobe size={15} />, label: t("resume.tab.languages") },
     ];
 
     return (
         <section className="min-h-screen bg-[linear-gradient(180deg,rgba(59,130,246,0.05)_0%,rgba(124,58,237,0.05)_50%,transparent_100%)] px-8 py-16">
             <div className="mx-auto max-w-[900px]">
-
+                <div>
+                    <img
+                        src="src/assets/icon.svg"
+                        alt="Profile"
+                        className="mx-auto mb-6 h-32 w-auto  object-cover"
+                    />
+                </div>
                 {/* ── Header ── */}
                 <div className="mb-10 text-center">
-                    <div className="mb-4 inline-block rounded-full border border-[var(--primary-purple)]/30 bg-[rgba(124,58,237,0.08)] px-4 py-1 text-[0.7rem] font-bold uppercase tracking-widest text-[var(--primary-purple)]">
-                        {t("resume.badge")}
-                    </div>
-                    <h1 className="mb-2 text-[2.8rem] font-bold text-[var(--text-h)]">Sawsan Al-Rabeei</h1>
+                    <h1 className="my-8 text-[2.8rem] font-bold text-[var(--text-h)]">Sawsan Al-Rabeei</h1>
                     <p className="mb-6 text-[1.05rem] text-[var(--text)]">{t("resume.subtitle")}</p>
                     <div className="mb-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[var(--text)]">
                         <span className="flex items-center gap-1.5">
@@ -148,22 +155,30 @@ export default function Resume() {
                             Kuala Lumpur, Malaysia
                         </span>
                     </div>
-                    <a
-                        href={cvPdf}
-                        download="Sawsan_Al-Rabeei_CV.pdf"
-                        className="inline-flex items-center gap-2 rounded-full bg-[var(--primary-purple)] px-7 py-3 text-sm font-semibold text-white no-underline shadow-[0_4px_15px_rgba(124,58,237,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_6px_24px_rgba(124,58,237,0.55)]"
-                    >
-                        <FiDownload size={16} />
-                        {t("resume.download")}
-                    </a>
+                    <div className="flex flex-wrap items-center justify-center gap-3">
+                        <a
+                            href={cvPdf}
+                            download="Sawsan_Al-Rabeei_CV.pdf"
+                            className="inline-flex items-center gap-2 rounded-full bg-[var(--primary-purple)] px-7 py-3 text-sm font-semibold text-white no-underline shadow-[0_4px_15px_rgba(124,58,237,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_6px_24px_rgba(124,58,237,0.55)]"
+                        >
+                            <FiDownload size={16} />
+                            {t("resume.download")}
+                        </a>
+                        <button
+                            onClick={() => onNavigate("contact")}
+                            className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-[var(--primary-cyan)]/50 bg-transparent px-7 py-3 text-sm font-semibold text-[var(--primary-cyan)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--primary-cyan)] hover:shadow-[0_6px_24px_rgba(6,182,212,0.25)]"
+                        >
+                            <FiMail size={16} />
+                            {t("nav.contact")}
+                        </button>
+                    </div>
                 </div>
 
                 {/* ── Stats ── */}
-                <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-                    <StatCard value="3.55"   label={t("resume.stat.cgpa")}     sub={t("resume.stat.cgpaSub")}      />
-                    <StatCard value="Year 2" label={t("resume.stat.year")}     sub={t("resume.stat.yearSub")}      />
-                    <StatCard value="2+"     label={t("resume.stat.freelance")} sub={t("resume.stat.freelanceSub")} />
-                    <StatCard value="3"      label={t("resume.stat.langs")}    sub={t("resume.stat.langsSub")}     />
+                <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                    <StatCard value="3.55" label={t("resume.stat.cgpa")} sub={t("resume.stat.cgpaSub")} />
+                    <StatCard value="Year 2" label={t("resume.stat.year")} sub={t("resume.stat.yearSub")} />
+                    <StatCard value="2+" label={t("resume.stat.freelance")} sub={t("resume.stat.freelanceSub")} />
                 </div>
 
                 {/* ── Summary ── */}
@@ -177,11 +192,10 @@ export default function Resume() {
                         <button
                             key={idx}
                             onClick={() => setActiveTab(idx)}
-                            className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-all duration-200 ${
-                                activeTab === idx
-                                    ? "bg-[var(--primary-purple)] text-white shadow-[0_2px_12px_rgba(124,58,237,0.4)]"
-                                    : "text-[var(--text)] hover:bg-[rgba(124,58,237,0.08)] hover:text-[var(--text-h)]"
-                            }`}
+                            className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-all duration-200 ${activeTab === idx
+                                ? "bg-[var(--primary-purple)] text-white shadow-[0_2px_12px_rgba(124,58,237,0.4)]"
+                                : "text-[var(--text)] hover:bg-[rgba(124,58,237,0.08)] hover:text-[var(--text-h)]"
+                                }`}
                         >
                             {icon}
                             <span className="hidden sm:inline">{label}</span>
@@ -285,9 +299,9 @@ export default function Resume() {
                             {t("resume.langs.title")}
                         </h2>
                         <div className="flex flex-col gap-4">
-                            <LangBar lang={t("resume.lang.arabic")}   level={t("resume.lang.arabicLevel")}   pct={100} />
-                            <LangBar lang={t("resume.lang.english")}  level={t("resume.lang.englishLevel")}  pct={85}  />
-                            <LangBar lang={t("resume.lang.japanese")} level={t("resume.lang.japaneseLevel")} pct={35}  />
+                            <LangBar lang={t("resume.lang.arabic")} level={t("resume.lang.arabicLevel")} pct={100} />
+                            <LangBar lang={t("resume.lang.english")} level={t("resume.lang.englishLevel")} pct={85} />
+                            <LangBar lang={t("resume.lang.japanese")} level={t("resume.lang.japaneseLevel")} pct={35} />
                         </div>
                     </div>
                 )}
