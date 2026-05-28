@@ -132,7 +132,7 @@ export default function Resume({ onNavigate }: ResumeProps) {
             <div className="mx-auto max-w-[900px]">
                 <div>
                     <img
-                        src="src/assets/icon.svg"
+                        src="src/assets/logo.svg"
                         alt="Profile"
                         className="mx-auto mb-6 h-32 w-auto  object-cover"
                     />

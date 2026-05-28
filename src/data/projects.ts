@@ -86,10 +86,16 @@ export const projects: Project[] = [
         thumbnail: "src/assets/projects/webDev/tailora.png",
         abstract: "An e-commerce website for the prototype application Tailora.",
         description: "A responsive e-commerce platform built with modern web technologies.",
-        details: "This project involved designing and developing a full-featured e-commerce website with a focus on user experience and performance. Key features include product browsing, shopping cart functionality, and secure checkout.",
+        details: "This project involved designing and developing a full-featured e-commerce website with a focus on user experience and performance. Key features include product browsing, shopping cart functionality, and secure checkout. The Website inludes a hand-drawn and animated symbols to enhance the user experience and make it more engaging.",
         tools: ["HTML", "CSS", "JavaScript"],
         year: 2025,
         websiteUrl: "https://reinylo.github.io/Tailora.com/",
+        gallery: {
+            videos: [
+                "src/assets/projects/webDev/ARw.mp4",
+                "src/assets/projects/webDev/Createw.mp4",
+            ],
+        },
     },
     {
         id: "5",
@@ -192,5 +198,27 @@ export const projects: Project[] = [
             ],
 
         },
+    },
+    {
+        id: "12",
+        title: "portfolio logo design",
+        category: "vector-illustration",
+        thumbnail: "src/assets/projects/Logos/sawsan.png",
+        abstract: "Logo design for a personal portfolio.",
+        description: "A sleek and modern logo that represents the individual's personal brand.",
+        details: "This logo represents the iconic design of a female with a niqab represeing the designer self, along with a painting brush to represent the cretive work and artisitic skills. Colors used are a compenation of cyan blue and shades of purple to give a calm and creative vibe.",
+        tools: ["Adobe Illustrator", "Adobe Photoshop"],
+        year: 2025,
+    },
+    {
+        id: "13",
+        title: "e-portfolio website design and development",
+        category: "web-development",
+        thumbnail: "src/assets/projects/webDev/e-portfolio.png",
+        abstract: "Website design and development for a personal portfolio.",
+        description: "A modern and responsive website that showcases the individual's work and skills.",
+        details: "This project involved designing and developing a fully responsive e-portfolio website using modern web technologies, ensuring a seamless user experience across all devices.",
+        tools: ["React", "TypeScript", "Tailwind CSS", "Vite", "GitHub"],
+        year: 2026,
     },
 ];

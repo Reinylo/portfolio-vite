@@ -1,6 +1,6 @@
 import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub } from "react-icons/fi";
 import { SiArtstation } from "react-icons/si";
-import logo from "../assets/icon.svg";
+import logo from "../assets/logo.svg";
 import { useLanguage } from "../context/LanguageContext";
 
 type ViewType = "home" | "portfolio" | "project-detail" | "contact" | "resume";
