@@ -99,7 +99,7 @@ export default function Contact() {
                                     <FiLinkedin size={20} />
                                     <span className="font-medium">LinkedIn</span>
                                 </a>
-                                <a href="https://github.com/Reinylo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-[var(--card-border)] px-5 py-3.5 text-[var(--text)] no-underline transition-all duration-300 hover:border-[var(--primary-purple)] hover:bg-[rgba(124,58,237,0.05)] hover:text-[var(--primary-purple)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)]">
+                                <a href="https://github.com/Sawsan-aa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-[var(--card-border)] px-5 py-3.5 text-[var(--text)] no-underline transition-all duration-300 hover:border-[var(--primary-purple)] hover:bg-[rgba(124,58,237,0.05)] hover:text-[var(--primary-purple)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)]">
                                     <FiGithub size={20} />
                                     <span className="font-medium">GitHub</span>
                                 </a>

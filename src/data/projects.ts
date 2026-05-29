@@ -89,7 +89,7 @@ export const projects: Project[] = [
         details: "This project involved designing and developing a full-featured e-commerce website with a focus on user experience and performance. Key features include product browsing, shopping cart functionality, and secure checkout. The Website inludes a hand-drawn and animated symbols to enhance the user experience and make it more engaging.",
         tools: ["HTML", "CSS", "JavaScript"],
         year: 2025,
-        websiteUrl: "https://reinylo.github.io/Tailora.com/",
+        websiteUrl: "https://Sawsan-aa.github.io/Tailora.com/",
         gallery: {
             videos: [
                 "projects/webDev/ARw.mp4",
