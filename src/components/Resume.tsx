@@ -3,7 +3,7 @@ import {
     FiDownload, FiBriefcase, FiCode, FiBook, FiGlobe,
     FiMail, FiPhone, FiMapPin, FiAward, FiStar,
 } from "react-icons/fi";
-import cvPdf from "../assets/projects/pdfs/CV.pdf?url";
+const cvPdf = "projects/pdfs/CV.pdf";
 import logo from "../assets/logo.svg";
 import { useLanguage } from "../context/LanguageContext";
 

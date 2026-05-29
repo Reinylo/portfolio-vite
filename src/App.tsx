@@ -88,7 +88,7 @@ function Header({ onNavigate, onSelectProject }: HeaderProps) {
     <>
       <header className="relative flex min-h-[calc(120vh-4rem)] items-center justify-center overflow-hidden px-8 py-16">
         <video
-          src="src/assets/projects/3D/turntable.mp4"
+          src="projects/3D/turntable.mp4"
           autoPlay
           loop
           muted
