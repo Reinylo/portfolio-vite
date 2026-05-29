@@ -4,6 +4,7 @@ import {
     FiMail, FiPhone, FiMapPin, FiAward, FiStar,
 } from "react-icons/fi";
 import cvPdf from "../assets/projects/pdfs/CV.pdf?url";
+import logo from "../assets/logo.svg";
 import { useLanguage } from "../context/LanguageContext";
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
@@ -132,7 +133,7 @@ export default function Resume({ onNavigate }: ResumeProps) {
             <div className="mx-auto max-w-[900px]">
                 <div>
                     <img
-                        src="src/assets/logo.svg"
+                        src={logo}
                         alt="Profile"
                         className="mx-auto mb-6 h-32 w-auto  object-cover"
                     />
