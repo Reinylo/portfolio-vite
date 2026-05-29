@@ -33,7 +33,7 @@ export const projects: Project[] = [
         details: "Designed a visually appealing brochure that highlights the unique features of the Samsung Fold Phone. The design main idea was to enable the customer to experience the foldable design through the brochure layout and visuals.",
         tools: ["Adobe Photoshop"],
         year: 2024,
-        documentationPdf: "src/assets/projects/pdfs/brochure Doc.pdf",
+        documentationPdf: "src/assets/projects/pdfs/Brochure Doc.pdf",
         gallery: {
             images: [
                 "src/assets/projects/Ps/brochure copy.jpg",
